@@ -1,0 +1,34 @@
+name: Pull Request Workflow
+
+on:
+  pull_request:
+    branches:
+      - dev
+      - main
+      - releases/**
+
+jobs:
+  workspace-check:
+    uses: ./.github/workflows/workspace-check.yml
+    secrets: inherit
+
+  core-cargo-test:
+    uses: ./.github/workflows/core-cargo-test.yml
+    secrets: inherit
+
+  dashboard-build-and-draft:
+    uses: ./.github/workflows/dashboard-build-and-draft.yml
+    needs: [workspace-check, core-cargo-test]
+    if: github.event.pull_request.head.repo == 'Lodestone-Team/lodestone'
+    with:
+      debug: false
+      version: null
+    secrets: inherit
+
+  core-build-and-draft:
+    uses: ./.github/workflows/core-build-and-draft.yml
+    needs: [workspace-check, core-cargo-test]
+    if: github.event.pull_request.head.repo == 'Lodestone-Team/lodestone'
+    with:
+      version: null
+    secrets: inherit

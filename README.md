@@ -1,4 +1,4 @@
-[![Lodestone Screen Shot](/public/assets/readmeRender.png)](https://www.lodestone.cc/)
+[![Lodestone Screen Shot](/dashboard/public/assets/readmeRender.png)](https://www.lodestone.cc/)
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
@@ -18,20 +18,47 @@ A free, open source server hosting tool for Minecraft and other multiplayers
 - [x] Collaborative remote server and resource management
 - [x] Priority on safety and security
 - [ ] User permission management 🚧
-- [ ] Automated macros and tasks 🚧
+- [ ] Automated macros and tasks (beta, read more [here](https://github.com/Lodestone-Team/lodestone/wiki/Macro-and-Task))
 - [ ] Connecting without port forward 🚧
 
-![Lodestone Spring 2023 Roadmap](/public/assets/springRoadmap.png)
 
-## [Download](https://github.com/Lodestone-Team/dashboard/releases/latest)
+## Installation
 
-You can download the Lodestone client from our [release page](https://github.com/Lodestone-Team/dashboard/releases/latest).
+### Windows
+You can download Lodestone Desktop for Windows from the [releases page](https://github.com/Lodestone-Team/lodestone/releases)
 
-We also have a [webapp](https://www.lodestone.cc/) in early access for remote management.
+### Docker
+See [here](https://github.com/Lodestone-Team/lodestone/wiki/Docker-Support)
 
-For any troubleshooting, see our [wiki](https://github.com/Lodestone-Team/lodestone/wiki/Known-Issues).
+### Linux
+Download and run [Lodestone CLI](https://github.com/Lodestone-Team/lodestone_cli).
 
-For installing Lodestone Core, check out [here](https://github.com/Lodestone-Team/lodestone_core).
+If you would like to use the dashboard:
+1. Use a chromium based browser (Chrome, Edge, Brave, etc.) and go to [https://www.lodestone.cc/](https://www.lodestone.cc/)
+2. Follow this [guide](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/mixed-content.html?lang=en) to enable mixed content for the site.
+3. If you have browser extensions such as HTTPS Everywhere, disable them for the site.
+
+To see why step 2 and 3 are necessary and some possible solutions, see [here](https://github.com/Lodestone-Team/lodestone/wiki/FAQ#why-do-i-need-to-enable-mixedinsecure-content-and-disable-https-is-this-safe)
+
+> **Note**
+> Lodestone Desktop for Linux is highly experimental and untested. We won't be able to provide support if you decide to use it.
+
+### MacOS (Intel)
+Download and run [Lodestone CLI](https://github.com/Lodestone-Team/lodestone_cli).
+
+If you would like to use the dashboard:
+1. Use a chromium based browser (Chrome, Edge, Brave, etc.) and go to [https://www.lodestone.cc/](https://www.lodestone.cc/)
+2. Follow this [guide](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/mixed-content.html?lang=en) to enable mixed content for the site.
+3. If you have browser extensions such as HTTPS Everywhere, disable them for the site.
+
+To see why step 2 and 3 are necessary and some possible solutions, see [here](https://github.com/Lodestone-Team/lodestone/wiki/FAQ#why-do-i-need-to-enable-mixedinsecure-content-and-disable-https-is-this-safe)
+
+> **Note**
+> ARM Macs are not supported yet. See [this issue](https://github.com/Lodestone-Team/lodestone_core/issues/160) for more info.
+
+> **Note**
+> Lodestone Desktop for MacOs is highly experimental and untested. We won't be able to provide support if you decide to use it.
+
 
 ## Safety & Security
 
@@ -47,7 +74,7 @@ Lodestone is still new and we have *a lot* of features planned for this year. Ei
 
 ## License
 
-This project uses the GNU Affero General Public License v3.0. See our `LICENSE` file for details. For an alternate (commercial) license, please raise an issue.
+This project uses the GNU Affero General Public License v3.0. See our `LICENSE` file for details. For an alternate (proprietary) license, please raise an issue.
 
 
 ## Team
